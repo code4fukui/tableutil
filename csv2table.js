@@ -1,4 +1,7 @@
 export const csv2table = (data, names) => {
+  if (!names) {
+    names = Object.keys(data);
+  }
   const cr = (tag, p) => {
     const c = document.createElement(tag);
     if (p) {
