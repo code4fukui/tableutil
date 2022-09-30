@@ -1,4 +1,4 @@
-export const csv2table = (csv, names) => {
+export const csv2table = (data, names) => {
   const cr = (tag, p) => {
     const c = document.createElement(tag);
     if (p) {
